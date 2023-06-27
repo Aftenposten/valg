@@ -1,6 +1,7 @@
 /** @typedef party
  * @type {object}
- * @property {string} kode Valgdirektoratets partikode.
+ * @property {string} [kode] Valgdirektoratets partikode.
+ * @property {string} [ssb] SSBs partikode.
  * @property {string} [pop] Poll of polls sin partikode.
  * @property {string} name Partiets fulle navn.
  * @property {string} [samisk] Partiets samiske navn.
@@ -125,6 +126,22 @@ const parties = [
     name: "Andre partier",
     shortname: "Andre",
     abbr: "Andre",
+    color: "#000",
+    textcolor: "#333",
+  },
+  {
+    ssb: "LL",
+    name: "Lokale lister",
+    shortname: "LL",
+    abbr: "LL",
+    color: "#000",
+    textcolor: "#333",
+  },
+  {
+    ssb: "FL",
+    name: "Felleslister",
+    shortname: "FL",
+    abbr: "FL",
     color: "#000",
     textcolor: "#333",
   },
