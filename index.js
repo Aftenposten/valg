@@ -129,6 +129,22 @@ const parties = [
     textcolor: "#333",
   },
   {
+    kode: "LL",
+    name: "Lokale lister",
+    shortname: "LL",
+    abbr: "LL",
+    color: "#000",
+    textcolor: "#333",
+  },
+  {
+    kode: "FL",
+    name: "Felleslister",
+    shortname: "FL",
+    abbr: "FL",
+    color: "#000",
+    textcolor: "#333",
+  },
+  {
     kode: "Blanke",
     name: "Blanke stemmer",
     shortname: "Blanke",
