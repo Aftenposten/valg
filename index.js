@@ -9,6 +9,8 @@
  * @property {string} abbr Partiets forkortede navn.
  * @property {string} color Partiets farge i hex-kode, etter Aftenpostens designmal.
  * @property {string} [textcolor] Partiets lesbare farge i hex-kode, etter Aftenpostens designmal.
+ * @property {string} [colorDark] Partiets farge på mørk bakgrunn i hex-kode, etter Aftenpostens designmal.
+ * @property {string} [textcolorDark] Partiets lesbare farge på mørk bakgrunn i hex-kode, etter Aftenpostens designmal.
  * @property {string} [logo] Partiets logo i SVG-format.
  */
 
@@ -24,6 +26,9 @@ const parties = [
     shortname: "Ap",
     abbr: "Ap",
     color: "#fd4b5a",
+    textcolor: "#fd4b5a",
+    colorDark: "#fd4b5a",
+    textcolorDark: "#fd4b5a",
     logo: '<svg viewBox="0 0 215 231" xmlns="http://www.w3.org/2000/svg"><g fill="#FFF" fill-rule="evenodd"><path d="M132 51c-23-10-60-10-81 2-20 12-31 35-31 66 0 14 2 28 5 40l-5-10c-4-10-9-21-12-32-5-16-9-33-8-52 1-18 5-33 15-45C24 10 38 1 55 0c21-1 35 9 47 18s22 21 30 33z"/><path d="M101 3c24 6 46 14 66 25 19 11 35 24 44 46 10 26-1 54-14 68a98 98 0 01-59 31l3-4c9-10 17-23 22-37 6-17 5-38-1-55a165 165 0 00-51-66l-10-8z"/><path d="M141 66c-37 3-67 13-75 45-3 9-4 24-2 35-7-6-13-14-19-23-5-11-11-26-6-39 3-9 10-16 19-21 8-5 18-7 31-8 21-1 37 5 52 11z"/><path d="M121 173c7-12 15-24 17-41 2-28-23-39-47-42 11-6 23-11 39-13 11-1 19 5 22 13 6 15 1 38-5 49-8 14-17 26-26 34z"/><path d="M83 103c19 0 37 7 36 24-1 9-9 13-17 14 3-3 6-8 5-14-1-13-14-19-24-24z"/><path d="M77 111c1 17 8 37 24 40 10 2 16-6 22-9-3 11-8 24-19 26-9 1-15-4-20-7-11-10-12-34-7-50z"/><path d="M31 119h1c7 14 16 27 28 38 11 10 24 20 40 25 17 6 39 5 56 0s31-12 44-22c-12 18-26 33-42 47-7 6-16 13-26 17-11 5-23 9-36 6-17-3-30-15-39-27s-16-27-21-45c-3-11-5-24-5-38v-1z"/></g></svg>',
   },
   {
@@ -34,6 +39,9 @@ const parties = [
     shortname: "Høyre",
     abbr: "H",
     color: "#0070ff",
+    textcolor: "#0070ff",
+    colorDark: "#0070FF",
+    textcolorDark: "#3990FF",
     logo: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 652 304"><g id="H" stroke="none" stroke-width="1" fill="#FFF" fill-rule="nonzero"><path d="M.75 75.74L38.33 294.8a10.29 10.29 0 0015.49 7.06c55-33.41 272.51-158.08 399.76-120.7 3.06.9 5.69-1.84 5.17-5-1.38-8.35-14.42-77.92-15.84-86C427.37 1.13 271.64-45 7.35 63.66a11 11 0 00-6.6 12.08z" id="Path"/><path d="M391.87 260.77c-9.51.45-9.89-7.77-1.42-9.89 62.35-15.59 89.56-44.68 87.08-76.12-.51-6.46-9.41-64.95-11.62-85.08a8.76 8.76 0 015.58-9.13C492.84 72.36 559.78 43.72 604 7.06a7.89 7.89 0 0112.74 4.58l35 176a9.22 9.22 0 01-4.78 9.58c-30.36 14.65-134.82 57.92-255.09 63.55z" id="Path"/><path d="M366.7 203.17l9.88 29.63c.94 4.45 3.11 6.43 7.41 4.94 39.22-13.57 58-25.93 56.79-35.8-1.08-8.58-25.31-12.72-66.38-6.87-4.4.62-8.62 3.74-7.7 8.1z" id="Path"/></g></svg>',
   },
   {
@@ -44,6 +52,9 @@ const parties = [
     shortname: "Frp",
     abbr: "Frp",
     color: "#4b08e4",
+    textcolor: "#4b08e4",
+    colorDark: "#783DFF",
+    textcolorDark: "#9D74FB",
     logo: '<svg  viewBox="0 0 223 217" xmlns="http://www.w3.org/2000/svg"><g fill="#FFF" fill-rule="evenodd"><path d="M109 22c3 2 5 2 8 2 2-6 5-13 9-19-3-3-6-4-9-5-4 7-6 15-8 22zM118 25c10-10 25-25 47-23 29 3 35 37 58 38a47 47 0 01-38 16c-34 0-44-30-67-31z"/><path d="M69 14c17-1 30 12 43 15 11 3 16-1 29 12 15 15 32 21 53 18 8 13 12 27 12 40 0 32-10 58-25 78-19 27-44 40-61 40-10 0-16-4-27-5-6 0-13 2-23 1-18-1-41-27-50-40C1 146-4 115 3 83c7-29 28-65 66-69zm86 55H96c-11 0-17 7-20 20l-16 88h21l13-66c1-5 2-5 5-5h48l8-37zm-16 74l6-28h-42l-13 62h19l7-34h23z"/></g></svg>',
   },
   {
@@ -55,6 +66,8 @@ const parties = [
     abbr: "Sp",
     color: "#2EAF6E",
     textcolor: "#57990B",
+    colorDark: "#2EAF6E",
+    textcolorDark: "#49CF8C",
     logo: '<svg viewBox="0 0 247 247" xmlns="http://www.w3.org/2000/svg"><g fill="#FFF" fill-rule="evenodd"><path d="M131 121c8 9 16 23 24 34 7 11 16 21 28 28 11 6 22 7 33 5 20-6 30-23 30-38 0-12-5-22-13-30 9-9 11-18 10-28 0-9-7-31-34-33-5 0-12 1-17 4 9 0 16 0 24 5 9 4 14 12 14 23-1 19-20 24-27 29 8 5 24 13 24 30 0 8-8 22-25 22-10 0-22-9-34-19-12-11-28-29-37-32zM121 115c9-8 23-16 34-24 11-7 21-16 28-28 6-11 7-22 5-33-6-20-23-30-38-30-12 0-22 5-30 13-9-9-18-11-28-10-9 0-31 7-33 34 0 5 1 12 4 17 0-9 0-16 5-24 4-9 12-14 23-14 19 1 24 20 29 27 5-8 13-24 30-24 8 0 22 8 22 25 0 10-9 22-19 34-11 12-29 28-32 37zM115 126c-8-9-16-23-24-34-7-11-16-21-28-28-11-6-22-7-33-5C10 65 0 82 0 97c0 12 5 22 13 30-9 9-10 18-10 28 0 9 7 31 34 33 5 0 12-1 17-4-9 0-16 0-24-5-9-4-14-12-14-23 1-19 20-24 27-29-8-5-24-13-24-30 0-8 8-22 25-22 10 0 22 9 34 19 12 11 28 29 37 32zM125 132c-9 8-23 16-34 24-11 7-21 16-28 28-6 11-7 22-5 33 6 20 23 30 38 30 12 0 22-5 30-13 9 9 18 11 28 10 9 0 31-7 33-34 0-5-1-12-4-17 0 9 0 16-4 24-5 9-13 14-23 14-20-1-25-20-30-27-5 8-13 24-30 24-8 0-22-8-22-25 0-10 9-22 19-34 11-12 29-28 32-37z"/></g></svg>',
   },
   {
@@ -64,6 +77,9 @@ const parties = [
     shortname: "SV",
     abbr: "SV",
     color: "#ff2a7f",
+    textcolor: "#ff2a7f",
+    colorDark: "#FF2AAA",
+    textcolorDark: "#FF52BA",
     logo: '<svg viewBox="0 0 246 144" xmlns="http://www.w3.org/2000/svg"><g fill="#FFF" fill-rule="evenodd"><path d="M111 136c0 2 0 5 5 1l62-63h-67v62zm28-67V8c0-2-2-4-4-4h-20c-2 0-4 2-4 4v61h28zM245 7l-62 62h-39l62-62 1-1c1-1 2-2 5-2h32c2 0 3 1 1 3z" fill-rule="nonzero"/><path d="M96 100c0 26-20 44-48 44S0 125 0 100c0-2 2-4 4-4h20c2 0 4 2 4 4 0 9 7 17 20 17 12 0 19-7 19-17 0-8-5-12-20-16C22 79 2 68 2 42 2 19 22 0 48 0s46 19 46 42c0 2-2 4-4 4H70c-2 0-4-2-4-4 0-8-7-15-18-15s-17 6-17 14 7 12 17 14c28 6 48 18 48 45"/></g></svg>',
   },
   {
@@ -73,6 +89,9 @@ const parties = [
     shortname: "Rødt",
     abbr: "Rødt",
     color: "#cd0060",
+    textcolor: "#cd0060",
+    colorDark: "#D71357",
+    textcolorDark: "#ED3172",
     logo: '<svg viewBox="0 0 238 228" xmlns="http://www.w3.org/2000/svg"><path d="M71 66c-4 15-13 48-13 79 24 13 59 26 81 32 22-17 51-47 62-62-10-20-27-51-43-67-26 2-73 13-87 18m-9 3c-6 23-11 53-13 71-27-15-50-32-49-37s27-24 62-34m90-29c-26 4-62 12-78 16 8-26 23-55 29-56 5-1 28 17 49 40m-1 141c18-17 36-37 55-57 11 24 27 66 22 70-5 5-50-3-77-13m-93-26l72 30c-26 24-60 46-66 43-5-3-8-47-6-73m149-48c-13-23-26-41-39-60 35-4 67 2 70 7 2 2-10 28-31 53" fill="#FFF" fill-rule="nonzero"/></svg>',
   },
   {
@@ -83,6 +102,8 @@ const parties = [
     abbr: "KrF",
     color: "#f1c526",
     textcolor: "#CEA203",
+    colorDark: "#F1C526",
+    textcolorDark: "#F1C526",
     logo: '<svg viewBox="0 0 242 216" xmlns="http://www.w3.org/2000/svg"><path d="M213 8c-41-22-92 5-110 51 2-64-58-63-83-41-26 21-25 68-7 92v-4C6 92-3 53 24 32c23-19 68-17 64 46 25-10 22-38 58-55 26-13 65-5 72 29 5 26 1 61-76 108l6-47 18-8c9-6 16-9 19-24-15 7-34 13-35 15 3-28 10-45 31-51 5-1 5-4 5-4-30 0-49 6-57 61v1c-9 4-19 7-25 17l3-19c-10 3-20 11-23 30l-7 42c-4-1-17-29-21-32 22-15 23-19 26-34-10 7-34 17-37 21 0-3 5-64 11-77-14 0-24 17-26 33-1 4-13 117-23 132 23-6 29-20 34-64 16 27 34 46 45 39 7-5 9-11 17-57 1-9 22-12 24-14l-6 50c-30 21-29 41-19 43 17 4 34-22 39-46 25-13 43-25 58-37 45-33 62-96 14-122zM105 206c-5-2-4-14 14-28-3 18-8 29-14 28z" fill="#FFF" fill-rule="nonzero"/></svg>',
   },
   {
@@ -92,6 +113,9 @@ const parties = [
     shortname: "Venstre",
     abbr: "V",
     color: "#045c6c",
+    textcolor: "#045c6c",
+    colorDark: "#05778B",
+    textcolorDark: "#068EA7",
     logo: '<svg viewBox=\'0 0 215 214\' xmlns="http://www.w3.org/2000/svg"><g fill="#FFF" fill-rule="evenodd"><path d="M9 65a106 106 0 0058 141L9 65M107 0C69 0 35 21 16 51h51v12H55s-3 0-4 2c-3 4-5 10 1 24l35 85 1 1 38-88 2-6c2-8 1-12-1-15l-3-2-4-1h-9V51h62v12h-13c-6 0-10 1-15 13l-3 6-55 130A107 107 0 10107 0"/></g></svg>',
   },
   {
@@ -101,6 +125,9 @@ const parties = [
     shortname: "MDG",
     abbr: "MDG",
     color: "#37CA08",
+    textcolor: "#37CA08",
+    colorDark: "#37CA08",
+    textcolorDark: "#37CA08",
     logo: '<svg viewBox=\'0 0 238 239\' xmlns="http://www.w3.org/2000/svg"><path d="M64 0C29 0 0 29 0 64v175h187c25-4 44-22 51-46V0H64zm25 123c0-6-2-12-9-12s-10 6-10 12v25H59v-28c0-5-3-9-9-9-7 0-10 6-10 12v25H29v-46h6c3 0 5 2 5 5v3c2-5 7-9 14-9s12 4 14 9c3-6 8-9 15-9 12 0 17 9 17 18v29H89v-25zm55-31c0-5 4-9 9-9h2v66h-11v-7c-3 5-9 8-16 8-13 0-22-11-22-24 0-14 9-24 22-24 8 0 13 4 15 7h1V92zm-13 49c8 0 13-8 13-15s-5-15-13-15c-9 0-13 8-13 15s4 15 13 15zm70-33c0-3 2-5 5-5h6v41c0 17-8 27-26 27-7 0-16-3-22-7l6-9c5 4 10 6 16 6 11 0 15-6 15-15v-4h-1c-3 5-8 7-15 7-13 0-22-11-22-23 0-13 9-24 22-24 7 0 13 3 16 8v-2zm-13 32c8 0 13-7 13-14 0-8-5-15-13-15-9 0-13 7-13 15 0 7 4 14 13 14z" fill="#FFF" fill-rule="evenodd"/></svg>',
   },
   {
@@ -126,8 +153,10 @@ const parties = [
     name: "Andre partier",
     shortname: "Andre",
     abbr: "Andre",
-    color: "#000",
+    color: "#333",
     textcolor: "#333",
+    colorDark: "#999",
+    textcolorDark: "#ccc",
   },
   {
     ssb: "LL",
@@ -142,16 +171,20 @@ const parties = [
     name: "Felleslister",
     shortname: "FL",
     abbr: "FL",
-    color: "#000",
+    color: "#333",
     textcolor: "#333",
+    colorDark: "#999",
+    textcolorDark: "#ccc",
   },
   {
     kode: "Blanke",
     name: "Blanke stemmer",
     shortname: "Blanke",
     abbr: "Blanke",
-    color: "#000",
+    color: "#333",
     textcolor: "#333",
+    colorDark: "#999",
+    textcolorDark: "#ccc",
   },
   {
     kode: "NSR",
