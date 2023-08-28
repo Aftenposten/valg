@@ -309,7 +309,7 @@ const parties = [
  */
 function getParty(kode, format = "kode") {
   const match = parties.find(
-    (d) => d[format]?.toLowerCase() === kode?.toLowerCase()
+    (d) => d[format]?.toLowerCase?.() === kode?.toLowerCase?.()
   );
   return match || {};
 }
