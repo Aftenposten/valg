@@ -83,7 +83,7 @@ const parties = [
     textcolor: "#ff2a7f",
     colorDark: "#FF2AAA",
     textcolorDark: "#FF52BA",
-    logo: '<svg viewBox="0 0 246 144" xmlns="http://www.w3.org/2000/svg"><g fill="#FFF" fill-rule="evenodd"><path d="M111 136c0 2 0 5 5 1l62-63h-67v62zm28-67V8c0-2-2-4-4-4h-20c-2 0-4 2-4 4v61h28zM245 7l-62 62h-39l62-62 1-1c1-1 2-2 5-2h32c2 0 3 1 1 3z" fill-rule="nonzero"/><path d="M96 100c0 26-20 44-48 44S0 125 0 100c0-2 2-4 4-4h20c2 0 4 2 4 4 0 9 7 17 20 17 12 0 19-7 19-17 0-8-5-12-20-16C22 79 2 68 2 42 2 19 22 0 48 0s46 19 46 42c0 2-2 4-4 4H70c-2 0-4-2-4-4 0-8-7-15-18-15s-17 6-17 14 7 12 17 14c28 6 48 18 48 45"/></g></svg>',
+    logo: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78 47"><path fill="#FFF" d="M9 32c0 3 2 6 6 6s6-3 6-6c0-2-1-4-6-5-8-2-14-5-14-13S7 0 15 0c7 0 13 4 14 10l-8 3c-1-3-3-4-6-4-4 0-5 2-5 4 0 3 2 4 5 5 9 2 15 5 15 14s-6 15-15 15C7 46 1 41 0 35l9-3Zm33 13L78 1H66L45 26V1H35v44z"/></svg>',
   },
   {
     kode: "RØDT",

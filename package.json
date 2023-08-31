@@ -1,6 +1,6 @@
 {
   "name": "@aftenposten/valg",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Nå er det snart valg! Aftenpostens redaksjonelle utviklere har laget et hendig bibliotek som samler en del informasjon om politiske partier i et relativt enkelt format.",
   "main": "index.js",
   "scripts": {
