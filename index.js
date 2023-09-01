@@ -9,10 +9,10 @@
  * @property {string} [samisk] Partiets samiske navn.
  * @property {string} shortname Partiets forkortede navn, etter Aftenpostens språkregler.
  * @property {string} abbr Partiets forkortede navn.
- * @property {string} color Partiets farge i hex-kode, etter Aftenpostens designmal.
- * @property {string} textcolor Partiets lesbare farge i hex-kode, etter Aftenpostens designmal.
- * @property {string} colorDark Partiets farge på mørk bakgrunn i hex-kode, etter Aftenpostens designmal.
- * @property {string} textcolorDark Partiets lesbare farge på mørk bakgrunn i hex-kode, etter Aftenpostens designmal.
+ * @property {string} [color] Partiets farge i hex-kode, etter Aftenpostens designmal.
+ * @property {string} [textcolor] Partiets lesbare farge i hex-kode, etter Aftenpostens designmal.
+ * @property {string} [colorDark] Partiets farge på mørk bakgrunn i hex-kode, etter Aftenpostens designmal.
+ * @property {string} [textcolorDark] Partiets lesbare farge på mørk bakgrunn i hex-kode, etter Aftenpostens designmal.
  * @property {string} [logo] Partiets logo i SVG-format.
  * @property {boolean} [diggi] Primært samepolitisk parti.
  */
@@ -304,10 +304,6 @@ const parties = [
     name: "Konservativt",
     shortname: "Kons",
     abbr: "Kons",
-    color: "#333",
-    textcolor: "#333",
-    colorDark: "#999",
-    textcolorDark: "#ccc",
   }
 ];
 
