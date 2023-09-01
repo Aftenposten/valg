@@ -299,6 +299,16 @@ const parties = [
     textcolorDark: "#00aeef",
     logo: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="#FFF" d="M15 68h6V34h-6zm14 0h6V42l15 26h7V34h-6v24L37 34h-8zm35 0h7V55h4c7 0 13-3 13-10s-5-11-13-11H64v34Zm7-17V39h4c4 0 6 2 6 6s-2 6-6 6h-4Z"/></svg>'
   },
+  {
+    kode: "KRISTNE",
+    name: "Konservativt",
+    shortname: "Kons",
+    abbr: "Kons",
+    color: "#333",
+    textcolor: "#333",
+    colorDark: "#999",
+    textcolorDark: "#ccc",
+  }
 ];
 
 /**
